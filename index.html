@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VYRA | Fashion Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <h1 class="logo">V<span>Y</span>RA</h1>
+
+  <nav>
+    <button onclick="filterSection('All')">All</button>
+    <button onclick="filterSection('Men')">Men</button>
+    <button onclick="filterSection('Women')">Women</button>
+    <button onclick="filterSection('Kids')">Kids</button>
+    <button onclick="filterSection('Accessories')">Accessories</button>
+    <button onclick="filterSale()">Sale</button>
+  </nav>
+
+  <div class="nav-right">
+    <a href="cart.html" class="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-logo">V<span>Y</span>RA</h1>
+    <p class="hero-slogan">Modern fashion. Bold identity.</p>
+    <button onclick="scrollToShop()">Shop Now</button>
+  </div>
+</section>
+
+<section id="category-filters" class="filters"></section>
+<section id="product-list" class="products"></section>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+function scrollToShop() {
+  document.getElementById("product-list").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>

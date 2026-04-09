@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VYRA | Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">VYRA</h1>
+  <a href="cart.html">⬅ Back to Cart</a>
+</header>
+
+<main class="checkout-container">
+
+  <!-- first from -->
+  <form onsubmit="placeOrder(event)">
+    <h2>Checkout</h2>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Phone Number" required>
+    <input type="text" placeholder="Delivery Address" required>
+    <input type="text" placeholder="City" required>
+    <input type="text" placeholder="Postal Code" required>
+
+    <button type="submit">Place Order</button>
+  </form>
+
+  <!-- Order summary second form -->
+  <div id="order-summary"></div>
+
+</main>
+
+<script src="js/checkout.js"></script>
+
+</body>
+</html>
