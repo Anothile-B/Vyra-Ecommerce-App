@@ -8,7 +8,7 @@ The project focuses on creating a visually appealing interface and user-friendly
 ---
 
 # Live Demo Link
-- GitHub Pages:
+- GitHub Pages:  https://anothile-b.github.io/Vyra-Ecommerce-App/ 
 
 ---
 
